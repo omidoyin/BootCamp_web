@@ -1,22 +1,122 @@
-
+.bar {
+  position: sticky;
+  top: 0;
+  max-width: 2000px;
+  background-color: #000000;
+  border-bottom: solid gray 1px;
+  z-index: 999;
+}
 
 .navBar {
-    
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: .5rem
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+/* .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 1.5rem #e5a03eaa);
+} */
+.navBar img {
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 1.5rem #e5a03eaa);
+  cursor: pointer;
 }
 
 .menu-list {
-    display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.menu-list li {
-    margin-right: 3rem;
-    list-style: none;
+.menu-list button {
+  margin-right: 3rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+    border-color: #e5a03eaa;
+  }
+.menu-list-small {
+ display: none;
+}
+.menu-list-small-off {
+    display: none;}
+  
+/* .menu-list-small button {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background: none;
+  border: none;
+  color: #040301;
+  cursor: pointer;
+} */
+.navBar .menu-icon {
+    display: none;
+}
+
+
+.navBar .menu-icon:hover {
+  color: #e5a03eaa;
+}
+
+@media screen and (max-width: 720px) {
+    .navBar .menu-icon {
+        font-size: 30px;
+        font-weight: bolder;
+        cursor: pointer;
+        display: block;
+      }
+    .menu-list {
+        display: none;
+    }
+   
+    .menu-list-small {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        top: 3.5rem;
+        right: 0;
+        background-color: #fff;
+        width: 40vw;
+        height: 100vh;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+        transition: all .5s ease-in-out;
+      }
+      .menu-list-small-off {
+       
+        right: -10rem;
+    }
+        
+      .menu-list-small button {
+        margin-top: 2rem;
+        margin-right: 1.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: inherit;
+        background: none;
+        border: none;
+        color: #040301;
+        cursor: pointer;
+      }
+    
 }

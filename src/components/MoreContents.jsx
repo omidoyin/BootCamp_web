@@ -1,26 +1,23 @@
-import {data} from '../data/data'
-import { BsFillArrowRightCircleFill } from "react-icons/bs"
-import '../styles/contentpage.css'
-import { useParams} from 'react-router-dom'
+import { data } from "../data/data";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import "../styles/morecontent.css";
+import { useParams, useNavigate } from "react-router-dom";
 
-const MoreContents=()=>{
-    const id = useParams()
+const MoreContents = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
 
-    console.log(id)
-    console.log(data)
-    return (
-        <>
-        <div className='grid-elements'>
-            {data?.map((items,i ) =>(
-                <div key={i} className='flex-elements'>
-                    <img src={items.img.img1} alt="" />
-                    <h2 className='main-text'>{items.maintext}</h2>
-                    <div className='cta'><BsFillArrowRightCircleFill/></div>
-                    <p className='sub-text'>{items.subtext}</p>
-                </div>
-            ))
-            }
-        </div>
-        </>
-    )}
-export default MoreContents
+  return (
+    <section className="morecontents">
+      <div className="flex-elements">
+      <BsFillArrowRightCircleFill className="cta" onClick={() => {
+              navigate(`/`);
+            }}/>
+        <img src={data[id].img.img1} alt="" />
+        <h2 className="main-text">{data[id].maintext}</h2>
+        <p className="sub-text">{data[id].subtext}</p>
+      </div>
+    </section>
+  );
+};
+export default MoreContents;

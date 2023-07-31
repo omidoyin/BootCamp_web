@@ -1,20 +1,26 @@
-
-
 .hero {
-    margin-top: 2rem;
-    background-color: #e48b8b;
-    position: relative;
+  margin-top: .5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero img {
-width: 100%;
-/* aspect-ratio: 1/1; */
-object-fit: cover;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
 }
 .hero h1 {
-    position: absolute;
-    color: red;
-    inset: 0;
-    /* margin: auto; */
-    /* margin: auto; */
+  position: absolute;
+  /* border: 1px solid red; */
+  font-size: clamp(.5rem, 10vmin, 5rem);
+  
+}
 
+@media screen and (max-width:430px) {
+  .hero img {
+    width: 100%;
+    height: 40vh;
+  }
 }

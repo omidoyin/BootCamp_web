@@ -1,0 +1,41 @@
+.morecontents {
+  /* background-color: #bd1717; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: black;
+}
+.flex-elements {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-elements img {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.morecontents .sub-text {
+text-align: justify;
+line-height: 1.5;
+}
+.morecontents .cta {
+transform: rotate(180deg);
+position: absolute;
+top: 2rem;
+right: 0;
+left: 0;
+margin: 0 auto;
+left: 30rem;
+font-size: 30px;
+cursor: pointer;
+}
+.morecontents .cta:hover {
+color: #e5a03eaa;
+}
+
