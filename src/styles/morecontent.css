@@ -7,7 +7,7 @@
   color: black;
 }
 .flex-elements {
-  padding-top: 2rem;
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,21 +21,34 @@
 }
 
 .morecontents .sub-text {
-text-align: justify;
-line-height: 1.5;
+  text-align: justify;
+  line-height: 1.5;
 }
 .morecontents .cta {
-transform: rotate(180deg);
-position: absolute;
-top: 2rem;
-right: 0;
-left: 0;
-margin: 0 auto;
-left: 30rem;
-font-size: 30px;
-cursor: pointer;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  left: 30rem;
+  font-size: 30px;
+  cursor: pointer;
 }
 .morecontents .cta:hover {
-color: #e5a03eaa;
+  color: #e5a03eaa;
 }
 
+@media screen and (max-width: 768px) {
+  .morecontents .cta {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    left: 0rem;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
