@@ -11,9 +11,9 @@ const MoreContents = () => {
     <section className="morecontents">
       <div className="flex-elements">
       <BsFillArrowRightCircleFill className="cta" onClick={() => {
-              navigate(`/`);
+              navigate(-1);
             }}/>
-        <img src={data[id].img.img1} alt="" />
+        <img src={data[id].img} alt="" />
         <h2 className="main-text">{data[id].maintext}</h2>
         <p className="sub-text">{data[id].subtext}</p>
       </div>

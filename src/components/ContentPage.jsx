@@ -17,14 +17,17 @@ const ContentPage = () => {
               navigate(`/more/${i}`);
             }}
           >
-            <img src={items.img.img1} alt="" />
+            <div className="img">
+              <img src={items.img} alt="" />
+            </div>
             <h2 className="main-text">{items.maintext.slice(0, 100)}</h2>
             <div className="more-texts">
-              <p className="sub-text">{items.subtext.slice(0, 100)}...<span className="cta">
-                <BsFillArrowRightCircleFill />
-              </span></p>
-
-              
+              <p className="sub-text">
+                {items.subtext.slice(0, 100)}...
+                <span className="cta">
+                  <BsFillArrowRightCircleFill />
+                </span>
+              </p>
             </div>
           </div>
         ))}

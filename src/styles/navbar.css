@@ -120,3 +120,8 @@ button:hover {
       }
     
 }
+@media screen and (max-width: 430px) {
+  .navBar .menu-icon {
+      font-size: 20px;
+    
+    }}

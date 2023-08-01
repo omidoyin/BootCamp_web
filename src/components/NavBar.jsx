@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const NavBar = () => {
   const navigate = useNavigate();
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   return (
     <>
       <section className="bar">
