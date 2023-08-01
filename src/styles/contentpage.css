@@ -33,6 +33,7 @@
 .grid-elements .flex-elements img {
   object-fit: cover;
   width: 100%;
+  height: auto;
   /* min-height: 35vmin; */
   /* height: auto; */
   /* border-radius: 20px; */

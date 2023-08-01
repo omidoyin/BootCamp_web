@@ -18,7 +18,7 @@ const ContentPage = () => {
             }}
           >
             <div className="img">
-              <img src={items.img} alt="" />
+              <img src={items.img} alt="" width="400" height="400" />
             </div>
             <h2 className="main-text">{items.maintext.slice(0, 100)}</h2>
             <div className="more-texts">
