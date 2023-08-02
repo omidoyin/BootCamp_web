@@ -1,12 +1,13 @@
 import { data } from "../data/data";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import "../styles/morecontent.css";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 
 const MoreContents = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-
+  const location = useLocation();
+console.log(location)
   return (
     <section className="morecontents">
       <div className="flex-elements">

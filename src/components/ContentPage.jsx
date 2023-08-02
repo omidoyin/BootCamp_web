@@ -2,13 +2,17 @@ import "../styles/contentpage.css";
 import { data } from "../data/data";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import { useRef } from "react";
 
 const ContentPage = () => {
+  const newref = useRef()
+
+  // newref.current?.scrollIntoView()
   const navigate = useNavigate();
   // console.log(data);
   return (
     <section className="content-page">
-      <div className="grid-elements">
+      <div ref={newref} className="grid-elements">
         {data?.map((items, i) => (
           <div
             key={i}
