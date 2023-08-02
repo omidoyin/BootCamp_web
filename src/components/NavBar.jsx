@@ -12,16 +12,24 @@ const NavBar = () => {
     <>
       <section className="bar">
         <section className="navBar">
-          <div className="logo">
-            <img
-              src={logo}
-              alt=""
-              className="logo"
-              onClick={() => {
-                navigate("/");
-              }}
-            />
+          <div>
+            {toggle ? (
+              <MdOutlineCancel
+                className="menu-icon"
+                onClick={() => {
+                  setToggle((prev) => !prev);
+                }}
+              />
+            ) : (
+              <AiOutlineMenu
+                className="menu-icon"
+                onClick={() => {
+                  setToggle((prev) => !prev);
+                }}
+              />
+            )}
           </div>
+
           <div>
             <ul className="menu-list">
               <button
@@ -73,22 +81,15 @@ const NavBar = () => {
               </button>
             </ul>
           </div>
-          <div>
-            {toggle ? (
-              <MdOutlineCancel
-                className="menu-icon"
-                onClick={() => {
-                  setToggle((prev) => !prev);
-                }}
-              />
-            ) : (
-              <AiOutlineMenu
-                className="menu-icon"
-                onClick={() => {
-                  setToggle((prev) => !prev);
-                }}
-              />
-            )}
+          <div className="logo">
+            <img
+              src={logo}
+              alt=""
+              className="logo"
+              onClick={() => {
+                navigate("/");
+              }}
+            />
           </div>
         </section>
       </section>

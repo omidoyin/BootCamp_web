@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const ContentPage = () => {
   const navigate = useNavigate();
-  console.log(data);
+  // console.log(data);
   return (
     <section className="content-page">
       <div className="grid-elements">
@@ -18,7 +18,7 @@ const ContentPage = () => {
             }}
           >
             <div className="img">
-              <img src={items.img} alt="" width="400" height="400" />
+              <img src={items.img} alt="" width="500" height="500" />
             </div>
             <h2 className="main-text">{items.maintext.slice(0, 100)}</h2>
             <div className="more-texts">

@@ -49,14 +49,15 @@
   transition: border-color 0.25s;
 }
 button:hover {
-    border-color: #e5a03eaa;
-  }
+  border-color: #e5a03eaa;
+}
 .menu-list-small {
- display: none;
+  display: none;
 }
 .menu-list-small-off {
-    display: none;}
-  
+  display: none;
+}
+
 /* .menu-list-small button {
   margin-top: 2rem;
   font-size: 1rem;
@@ -68,68 +69,61 @@ button:hover {
   cursor: pointer;
 } */
 .navBar .menu-icon {
-    display: none;
+  display: none;
 }
-
 
 .navBar .menu-icon:hover {
   color: #e5a03eaa;
 }
 
 @media screen and (max-width: 720px) {
-    .navBar .menu-icon {
-        font-size: 30px;
-        font-weight: bolder;
-        cursor: pointer;
-        display: block;
-      }
-    .menu-list {
-        display: none;
-    }
-   
-    .menu-list-small {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-        top: 3.5rem;
-        right: 0;
-        background-color: #fff;
-        width: 40vw;
-        height: 100vh;
-        padding-top: 2rem;
-        padding-bottom: 5rem;
-        transition: all .5s ease-in-out;
-      }
-      .menu-list-small-off {
-       
-        right: -10rem;
-    }
-        
-      .menu-list-small button {
-        margin-top: 2rem;
-        margin-right: 1.5rem;
-        font-size: 1rem;
-        font-weight: 500;
-        font-family: inherit;
-        background: none;
-        border: none;
-        color: #040301;
-        cursor: pointer;
-      }
-    
+  .navBar .menu-icon {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: block;
+  }
+  .menu-list {
+    display: none;
+  }
+
+  .menu-list-small {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    top: 3.5rem;
+    left: 0;
+    background-color: #fff;
+    width: 40vw;
+    height: 100vh;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-list-small-off {
+    left: -10rem;
+  }
+
+  .menu-list-small button {
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    background: none;
+    border: none;
+    color: #040301;
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 430px) {
   .navBar .menu-icon {
-      font-size: 20px;
-    
-    }
-    .navBar img {
-      width: 30px;
-      height: 30px;
-    
-    }
-  
-  
+    font-size: 20px;
   }
+  .navBar img {
+    width: 30px;
+    height: 30px;
+  }
+}

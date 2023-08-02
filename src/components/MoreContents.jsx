@@ -16,7 +16,7 @@ const MoreContents = () => {
             navigate(-1);
           }}
         />
-        <img src={data[id].img} alt="" />
+        <img src={data[id].img} alt="" width="600" height="200"/>
         <h2 className="main-text">{data[id].maintext}</h2>
         <p className="sub-text">{data[id].subtext}</p>
       </div>
