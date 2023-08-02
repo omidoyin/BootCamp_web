@@ -2,7 +2,7 @@ import img1 from "../assets/backend.jpg";
 import img2 from "../assets/block.jpg";
 import img3 from "../assets/web.jpg";
 import img4 from "../assets/cloud.jpg";
-import img5 from "../assets/ai.jpg";
+import img5 from "../assets/cloud.jpg";
 import img6 from "../assets/xr.jpg";
 import img7 from "../assets/scratch.jpg";
 import img8 from "../assets/automation.jpg";
