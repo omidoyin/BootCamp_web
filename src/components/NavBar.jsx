@@ -41,14 +41,14 @@ const NavBar = () => {
               </button>
               <button
                 onClick={() => {
-                  navigate("/");
+                  navigate("/about");
                 }}
               >
-                About Us
+                About
               </button>
               <button
                 onClick={() => {
-                  navigate("/");
+                  navigate("/contact");
                 }}
               >
                 Contact
@@ -65,7 +65,7 @@ const NavBar = () => {
               </button>
               <button
                 onClick={() => {
-                  navigate("/");
+                  navigate("/about");
                   setToggle((prev) => !prev);
                 }}
               >
@@ -73,7 +73,7 @@ const NavBar = () => {
               </button>
               <button
                 onClick={() => {
-                  navigate("/");
+                  navigate("/contact");
                   setToggle((prev) => !prev);
                 }}
               >

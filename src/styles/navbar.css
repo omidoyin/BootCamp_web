@@ -39,17 +39,19 @@
 .menu-list button {
   margin-right: 3rem;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.3rem 1rem;
+  border: 2px solid transparent;
+  padding: 0.2rem .7rem;
   font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #e5a03eaa;
+  color: black;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
   border-color: #e5a03eaa;
+  border-color: #ffffffaa;
 }
 .menu-list-small {
   display: none;
@@ -125,5 +127,8 @@ button:hover {
   .navBar img {
     width: 30px;
     height: 30px;
+  }
+  .menu-list-small {
+    top: 2.1rem;
   }
 }

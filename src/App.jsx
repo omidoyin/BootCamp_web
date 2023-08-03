@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MoreContents from "./components/MoreContents";
 import NavBar from "./components/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 function App() {
   return (
     <>
@@ -14,7 +16,9 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/more/:id" element={<MoreContents />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
+          <Footer/>
         </ScrollToTop>
       </Router>
     </>

@@ -11,7 +11,7 @@ const HomePage = () => {
         <Hero />
         <ContentPage />
         <AboutUs />
-        <Contact />
+      
     
     </>
   );
