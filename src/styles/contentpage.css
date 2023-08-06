@@ -1,6 +1,5 @@
 .content-page {
   margin-top: 2rem;
-  /* background-color: #ed2a2a; */
   color: #ffffff;
   color: #0c0700aa;
   color: #e5a03eaa;
@@ -12,16 +11,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
-/* .grid-elements .flex-elements::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #ffffff59;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-} */
+
 .grid-elements .flex-elements {
   display: flex;
   flex-direction: column;
@@ -46,7 +36,6 @@
   height: auto;
   min-height: 40px;
   position: relative;
- 
 }
 .grid-elements .flex-elements .img {
   position: relative;
@@ -70,22 +59,18 @@
 
 .flex-elements .more-texts {
   margin: 0;
-  /* position: absolute; */
   color: black;
   bottom: 0;
   padding: 0.5rem;
-  /* filter: drop-shadow(0 0 .5rem rgb(19, 0, 7)); */
 }
 .grid-elements .flex-elements .cta {
   margin: 0;
   position: relative;
   bottom: -0.2rem;
   right: -1rem;
-  /* font-size: 30px; */
   font-weight: bolder;
   color: #000000aa;
   border-radius: 50%;
-  /* padding: .2rem .2rem 0 0.2rem; */
 }
 .grid-elements .flex-elements .cta:hover {
   transform: scale(1.05);
@@ -103,15 +88,7 @@
     gap: 1rem;
   }
 }
-/* @media screen and (max-width: 970px) {
-  .content-page {
-    margin-top: 0.5rem;
-  }
-  .grid-elements {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-  }
-} */
+
 @media screen and (max-width: 770px) {
   .content-page {
     margin-top: 0.5rem;
@@ -120,26 +97,15 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-  .grid-elements .flex-elements .main-text {
-    /* top: 10%; */
-    /* font-size: 20px; */
-  }
 
   .flex-elements .more-texts {
     top: 50%;
     font-size: 16px;
   }
-  /* .grid-elements .flex-elements .cta {
-       
-       
-       
-      } */
+
   .grid-elements .flex-elements .img {
     max-width: 100%;
-    /* height: 50vh; */
-    /* height: 300px; */
     object-fit: cover;
-    /* aspect-ratio: 2/2; */
   }
 }
 @media screen and (max-width: 430px) {
@@ -147,22 +113,13 @@
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
-  .grid-elements .flex-elements .main-text {
-    /* top: 20%; */
-    /* font-size: 20px; */
-  }
+
   .flex-elements .more-texts {
     top: 50%;
     font-size: 13px;
   }
-  /* .grid-elements .flex-elements .cta {
-       
-       
-      } */
+
   .grid-elements .flex-elements .img {
     width: 100%;
-    /* height: 50vh; */
-    /* object-fit: cover;
-       aspect-ratio: 1/1; */
   }
 }
