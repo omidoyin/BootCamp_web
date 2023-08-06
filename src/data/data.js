@@ -3,7 +3,7 @@ import img2 from "../assets/block.jpg";
 import img3 from "../assets/web.jpg";
 import img4 from "../assets/cloud.jpg";
 import img5 from "../assets/data1.jpg";
-import img6 from "../assets/cloud.jpg";
+import img6 from "../assets/swift.jpeg";
 import img7 from "../assets/cloud.jpg";
 import img8 from "../assets/auto.jpg";
 
