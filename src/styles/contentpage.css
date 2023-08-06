@@ -45,16 +45,25 @@
   width: 90%;
   height: auto;
   min-height: 40px;
-  /* position: relative;
-  top: 0;
-  padding-top: 0;
-  margin-top: 0; */
+  position: relative;
+ 
+}
+.grid-elements .flex-elements .img {
+  position: relative;
 }
 .grid-elements .flex-elements .main-text {
   position: absolute;
   padding: 0.5rem;
-  top: 5%;
-  /* background-color: #fff; */
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
+  height: 20%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  font-size: clamp(1rem, 5vw, 1.5rem);
   filter: drop-shadow(0 0 0.5rem rgb(19, 0, 7));
   width: fit-content;
 }
@@ -85,7 +94,7 @@
   color: #e6e6e6aa;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1030px) {
   .content-page {
     margin-top: 0.5rem;
   }
@@ -94,6 +103,15 @@
     gap: 1rem;
   }
 }
+/* @media screen and (max-width: 970px) {
+  .content-page {
+    margin-top: 0.5rem;
+  }
+  .grid-elements {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+} */
 @media screen and (max-width: 770px) {
   .content-page {
     margin-top: 0.5rem;
@@ -103,8 +121,8 @@
     gap: 1rem;
   }
   .grid-elements .flex-elements .main-text {
-    top: 10%;
-    font-size: 20px;
+    /* top: 10%; */
+    /* font-size: 20px; */
   }
 
   .flex-elements .more-texts {
@@ -130,8 +148,8 @@
     gap: 0.5rem;
   }
   .grid-elements .flex-elements .main-text {
-    top: 20%;
-    font-size: 20px;
+    /* top: 20%; */
+    /* font-size: 20px; */
   }
   .flex-elements .more-texts {
     top: 50%;

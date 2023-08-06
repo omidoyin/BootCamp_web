@@ -6,8 +6,8 @@ footer {
   margin-top: 1rem;
   width: 100%;
   background-color: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   bottom: 0;
   margin-left: 0;
   margin-right: 0;
@@ -15,11 +15,15 @@ footer {
 }
 footer p {
     font-size: 12px;
+    padding: 0;
+    padding-top: .12rem;
+    padding-bottom: .12rem;
+    margin: 0;
 }
 
 @media screen and (max-width: 780px) {
   footer {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
   }
 }

@@ -23,8 +23,8 @@ const ContentPage = () => {
           >
             <div className="img">
               <img src={items.img} alt="" width="500" height="500" />
-            </div>
             <h2 className="main-text">{items.maintext.slice(0, 100)}</h2>
+            </div>
             <div className="more-texts">
               <p className="sub-text">
                 {items.subtext.slice(0, 100)}...
