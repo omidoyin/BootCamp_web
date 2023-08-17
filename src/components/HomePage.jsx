@@ -7,12 +7,9 @@ import NavBar from "./NavBar";
 const HomePage = () => {
   return (
     <>
-     
-        <Hero />
-        <ContentPage />
-        <AboutUs />
-      
-    
+      <Hero />
+      <ContentPage />
+      {/* <AboutUs /> */}
     </>
   );
 };
